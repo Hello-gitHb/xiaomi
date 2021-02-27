@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="../css/base2.css">
+    <link rel="stylesheet" href="../css/registry.css">
+    <style>
+        .registry span {
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content-box">
+        <div class="registry">
+            <div class="toplogo">
+                <a href="../index.html"><img src="../images/2019-08-13T00-52-11_03.png" alt=""></a>
+            </div>
+            <div class="main-top">
+                <h3>注册小米账号</h3>
+            </div>
+            <form id="registry-form">
+                <h4>用户名</h4>
+                <p><input type="text" placeholder="请输入用户名" name="username" class="username"></p>
+                <span class="span1"></span>
+                <h4>手机号码</h4>
+                <p><input type="text" placeholder="请输入手机号码" name='tel' class="tel"></p>
+                <span class="span2"></span>
+                <h4>密码</h4>
+                <p><input type="password" id="pas" placeholder="请输入密码" name="password" class="password"></p>
+                <span class="span3"></span>
+                <h4>重复密码</h4>
+                <p><input type="password" placeholder="请确认密码" name="passwordcomf" class="password"></p>
+                <span class="span3"></span>
+                <button type="submit" name="submit" class="submit">立即注册</button>
+            </form>
+            <div class="read"> 已阅读并同意：小米 <span> 用户协议 </span>和 <span> 隐私政策 </span> </div>
+        </div>
+        <div id="bot">
+            <div class="language">
+                <ul>
+                    <li><a href="#">简体</a></li>
+                    <span>|</span>
+                    <li><a href="#">繁体</a></li>
+                    <span>|</span>
+                    <li><a href="#">English</a></li>
+                    <span>|</span>
+                    <li><a href="#">常见问题</a></li>
+                </ul>
+            </div>
+            <div class="intro">
+                <span>小米公司版权所有-京ICP备10046444-</span>
+                <a href="#">
+                    <img src="https://account.xiaomi.com/static/res/9204d06/account-static/respassport/acc-2014/img/ghs.png"
+                        alt="">
+                    <span style="color: #333333;">京公网安备11010802020134号</span>
+                </a>
+                <span>-京ICP证110507号</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../Js/ajax.js"></script>
+<script src="../Js/jquery.min.js"></script>
+<script src="../validation/dist/jquery.validate.min.js"></script>
+<script src="../validation/dist/localization/messages_zh.min.js"></script>
+<script src="../Js/registry.js"></script>
+
+</html>
+<!-- 
+    注册的思路：
+    将注册的所有的信息提交到数据库 - 涉及的表单验证。
+        - 用户点击submit按钮直接提交(form+submit+name+action)
+        - 用户名重名检测：如果用户名存在不允许注册。
+        - 如果注册成功跳转到登录页面。
+ -->

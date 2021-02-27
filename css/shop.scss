@@ -1,0 +1,115 @@
+body,html{
+    width: 100%;
+    height: 100%;
+    header{
+        img{
+            width: 100%;
+            height: 500px;
+        }
+    }
+    #content{
+        width: 100%;
+        background-color: #F5F5F5;
+        .content{
+            width: 1226px;
+            margin: 0 auto;
+            padding: 50px 0 ;
+            background-color: #F5F5F5;
+            display: flex;
+            flex-wrap: wrap;
+            flex-shrink: 0;
+            .bigshop{
+                width: 1226px;
+                height: 434px;
+                display: flex;
+                transition: all .2s linear;
+                margin-bottom: 30px;
+                &:hover{
+                    transform: translateY(-4px);
+                    box-shadow: 0 0 20px 2px #918f8f;
+                }
+                .banner-img a img{
+                    width: 854px;
+                    height: 434px;
+                    background-color: #F5F5F5;
+                }
+                .shop-desc{
+                    background-color: #fff;
+                    padding: 80px 50px 0 50px;
+                    display: flex;
+                    flex-direction: column;
+                    .title a{
+                        color: #000;
+                        font-size: 40px;
+                    }
+                    .desc{
+                        margin-top: 10px;
+                        font-size: 12px;
+                        color: #707070;
+                    }
+                    .price{
+                        margin-top: 50px;
+                        font-size: 14px;
+                        color: red;
+                        span{
+                            color: red;
+                            font-size: 40px;
+                        }
+                    }
+                    .buy{
+                        margin-top: 40px;
+                        a{
+                            color: #707070;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            .smallshop{
+                width: 592px;
+                height: 484px;
+                margin-left: 14px;
+                background-color: #F5F5F5;
+                margin-top: 10px;
+                transition: all .2s linear;
+                &:hover{
+                    transform: translateY(-4px);
+                    box-shadow: 0 0 20px 2px #918f8f;
+                }
+                .banner-img a img{
+                    width: 592px;
+                    height: 358px;
+                }
+                .shop-desc{
+                    width: 592px;
+                    height: 126px;
+                    background-color: #fff;
+                    padding: 38px 48px 0 48px;
+                    .title{
+                        width: 558px;
+                        a{
+                            font-size: 24px;
+                            color: #000;
+                        }
+                    }
+                    .price-desc{
+                        height: 26px;
+                        margin-top: 10px;
+                        font-size: 12px;
+                        .desc{
+                            color: #707070;
+                            float: left;
+                        }
+                        .price{
+                            color: red;
+                            float: right;
+                            strong{
+                                font-size: 26px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

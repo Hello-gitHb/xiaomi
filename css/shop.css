@@ -1,0 +1,136 @@
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body header img, html header img {
+  width: 100%;
+  height: 500px;
+}
+
+body #content, html #content {
+  width: 100%;
+  background-color: #F5F5F5;
+}
+
+body #content .content, html #content .content {
+  width: 1226px;
+  margin: 0 auto;
+  padding: 50px 0;
+  background-color: #F5F5F5;
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+body #content .content .bigshop, html #content .content .bigshop {
+  width: 1226px;
+  height: 434px;
+  display: flex;
+  transition: all .2s linear;
+  margin-bottom: 30px;
+}
+
+body #content .content .bigshop:hover, html #content .content .bigshop:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px 2px #918f8f;
+}
+
+body #content .content .bigshop .banner-img a img, html #content .content .bigshop .banner-img a img {
+  width: 854px;
+  height: 434px;
+  background-color: #F5F5F5;
+}
+
+body #content .content .bigshop .shop-desc, html #content .content .bigshop .shop-desc {
+  background-color: #fff;
+  padding: 80px 50px 0 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+body #content .content .bigshop .shop-desc .title a, html #content .content .bigshop .shop-desc .title a {
+  color: #000;
+  font-size: 40px;
+}
+
+body #content .content .bigshop .shop-desc .desc, html #content .content .bigshop .shop-desc .desc {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #707070;
+}
+
+body #content .content .bigshop .shop-desc .price, html #content .content .bigshop .shop-desc .price {
+  margin-top: 50px;
+  font-size: 14px;
+  color: red;
+}
+
+body #content .content .bigshop .shop-desc .price span, html #content .content .bigshop .shop-desc .price span {
+  color: red;
+  font-size: 40px;
+}
+
+body #content .content .bigshop .shop-desc .buy, html #content .content .bigshop .shop-desc .buy {
+  margin-top: 40px;
+}
+
+body #content .content .bigshop .shop-desc .buy a, html #content .content .bigshop .shop-desc .buy a {
+  color: #707070;
+  font-size: 14px;
+}
+
+body #content .content .smallshop, html #content .content .smallshop {
+  width: 592px;
+  height: 484px;
+  margin-left: 14px;
+  background-color: #F5F5F5;
+  margin-top: 10px;
+  transition: all .2s linear;
+}
+
+body #content .content .smallshop:hover, html #content .content .smallshop:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px 2px #918f8f;
+}
+
+body #content .content .smallshop .banner-img a img, html #content .content .smallshop .banner-img a img {
+  width: 592px;
+  height: 358px;
+}
+
+body #content .content .smallshop .shop-desc, html #content .content .smallshop .shop-desc {
+  width: 592px;
+  height: 126px;
+  background-color: #fff;
+  padding: 38px 48px 0 48px;
+}
+
+body #content .content .smallshop .shop-desc .title, html #content .content .smallshop .shop-desc .title {
+  width: 558px;
+}
+
+body #content .content .smallshop .shop-desc .title a, html #content .content .smallshop .shop-desc .title a {
+  font-size: 24px;
+  color: #000;
+}
+
+body #content .content .smallshop .shop-desc .price-desc, html #content .content .smallshop .shop-desc .price-desc {
+  height: 26px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+body #content .content .smallshop .shop-desc .price-desc .desc, html #content .content .smallshop .shop-desc .price-desc .desc {
+  color: #707070;
+  float: left;
+}
+
+body #content .content .smallshop .shop-desc .price-desc .price, html #content .content .smallshop .shop-desc .price-desc .price {
+  color: red;
+  float: right;
+}
+
+body #content .content .smallshop .shop-desc .price-desc .price strong, html #content .content .smallshop .shop-desc .price-desc .price strong {
+  font-size: 26px;
+}

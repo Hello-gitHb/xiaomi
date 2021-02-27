@@ -1,0 +1,114 @@
+body {
+  background-color: #f9f9f9; }
+  body .content-box {
+    width: 855px;
+    height: 600px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 90px;
+    padding-right: 40px;
+    padding-left: 40px;
+    border-radius: 2px; }
+
+.registry .toplogo {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  padding-bottom: 40px; 
+}
+  .registry .toplogo img {
+    width: 100%; 
+  }
+.registry .main-top h3 {
+  line-height: 45px;
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center; 
+}
+.registry #registry-form {
+  margin: 0 auto;
+  padding: 30px 0;
+  width: 332px;
+  line-height: 20px; 
+}
+label.error{
+  float: right;
+  color: #FF2A2A;
+  font-size: 12px;
+}
+  .registry form h4 {
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 25px;
+    color: #333;
+    font-weight: normal;
+    display: block; }
+  .registry form input {
+    width: 320px;
+    height: 40px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(186, 186, 186, 0.3);
+    padding-left: 10px;
+    color: #333;
+    font-size: 14px;
+    outline: none; 
+  }
+
+  .registry form button {
+    width: 330px;
+    height: 42px;
+    margin: 0 auto;
+    line-height: 42px;
+    text-align: center;
+    font-size: 14px;
+    display: block;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    overflow: hidden;
+    background-color: #ff6700;
+    margin-top: 30px;
+    border: 1px solid rgba(186, 186, 186, 0.3);
+    border: 0 none;
+    color: #fff; 
+  }
+
+.registry .read {
+  text-align: center;
+  padding-bottom: 10px;
+  cursor: pointer;
+  color: #9d9d9d;
+  font-size: 14px;
+  margin-bottom: 60px; 
+}
+  .registry .read span {
+    color:red;
+    font-weight: 800; 
+  }
+
+#bot{
+    padding-top: 50px; 
+}
+
+.language ul {
+  width: 260px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+  .language ul li a,
+  .language ul span {
+    display: block;
+    padding: 0 6px;
+    color: #757575;
+    font-size: 14px; 
+  }
+
+.intro {
+  text-align: center;
+  width: 855px;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 14px;
+  color: #9d9d9d; 
+}
+

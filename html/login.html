@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="../css/base2.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <div class="h-login">
+        <div class="logo">
+            <a href="../index.html"><img
+                    src="https://account.xiaomi.com/static/res/7f6f2f5/account-static/respassport/acc-2014/img/mistore_logo.png"
+                    alt=""></a>
+        </div>
+    </div>
+    <div class="main-login">
+        <div class="wrapper">
+            <div class="content-box">
+                <div class="con-title">
+                    <div>账号登陆</div>
+                </div>
+                <form id="xiaomi-login">
+                    <p><input type="text" name="username" placeholder="用户名" class="username"></p>
+                    <p><input type="password" name="password" placeholder="密码" class="password"></p>
+                    <button class="submit-login">登录</button>
+                    <p class="forgetpassword"><a href="registry.html">立即注册</a><span> | </span><a href="#">忘记密码</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <ul class="top">
+            <li><a href="">简体</a></li>
+            <li><a href="">繁体</a></li>
+            <li><a href="">English</a></li>
+            <li><a href="">常见问题</a></li>
+            <li><a href="">隐私政策</a></li>
+        </ul>
+        <div class="bottom">小米公司版权所有-京ICP备10046444--京ICP证110507号
+            <div>
+    </footer>
+
+</body>
+<script src="../Js/jquery.min.js"></script>
+<script src="../validation/dist/jquery.validate.min.js"></script>
+<script src="../validation/dist/localization/messages_zh.min.js"></script>
+<script src="../Js/jquery.cookie.js"></script>
+<script src="../Js/login.js"></script>
+
+</html>
+
+<!-- 
+    登录的思路：
+        - 点击登录按钮，将用户名和密码传输给后端 - ajax
+        - 后端获取用户名和密码去和数据库里面的数据进行匹配
+        - 后端将匹配的结果返回给前端
+        - 前端显示是否成功的结果
+ -->

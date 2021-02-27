@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/base2.css">
+    <link rel="stylesheet" href="../css/shopcar.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <div class="head-mid">
+                <div class="logo-font">
+                    <a href="../index.html"><img src="../images/2019-08-13T00-52-11_03.png" alt=""></a>
+                    <span>我的购物车</span>
+                </div>
+                <div class="login-reg">
+                    <a class="btn-login" href="../html/login.html">登录</a>
+                    <span class="shu"></span>
+                    <a class="btn-reg" href="../html/registry.html">注册</a>
+                </div>
+            </div>
+        </header>
+
+        <div id="shops-list">
+            <div class="list-mid">
+                <div class="list-head">
+                    <div class="checkbox">
+                        <input class="allcheckbox" checked type="checkbox">全选
+                    </div>
+                    <div class="imgbox"></div>
+                    <div class="shopsname">商品名称</div>
+                    <div class="tshopsprice">单价</div>
+                    <div class="tnum">数量</div>
+                    <div class="totall">小计</div>
+                    <div class="do">操作</div>
+                </div>
+                <div class="shops">
+                    <!-- <div class="shops-item">
+                        <div class="checkbox">
+                            <input class="check" type="checkbox">
+                        </div>
+                        <div class="imgbox"></div>
+                        <div class="shopsname">米家直流变频落地扇1X白色</div>
+                        <div class="shopsprice">299元</div>
+                        <div class="num">
+                            <a class="reduce" style="border-right: 0;" href="">-</a>
+                            <div class="numshops">1</div>
+                            <a class="add" style="border-left: 0;" href="">+</a>
+                        </div>
+                        <div class="totall">598元</div>
+                        <div class="do">
+                            <a class="del" href="">x</a>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="list-foot">
+                    <div class="left-section">
+                        <a href="../index.html">继续购物</a>
+                        <p>共选择 <strong class="totalnum">1</strong>件商品</p>
+                    </div>
+                    <div class="right-section">
+                        <div class="price-totall">总共：<strong class="totalpri">299</strong>元</div>
+                        <a href="#">去结算</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../Js/jquery.min.js"></script>
+<script src="../Js/jquery.cookie.js"></script>
+<script src="../Js/shopcar.js"></script>
+
+</html>

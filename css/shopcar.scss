@@ -1,0 +1,282 @@
+#app{
+    width: 100%;
+    height: 100%;
+    header{
+        width: 100%;
+        height: 102px;
+        border-bottom: 3px solid #FF6700;
+        .head-mid{
+            width: 1226px;
+            height: 102px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .logo-font{
+                width: 300px;
+                height: 102px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                span{
+                    line-height: 102px;
+                    font-size: 36px;
+                    color: #333;
+                }
+            }
+            .login-reg{
+                a{
+                  display: inline-block;
+                  width: 34px;
+                  height: 40px;
+                  line-height: 40px;
+                  padding: 0 5px;
+                  font-size: 12px;
+                  color: #B0B0B0;  
+                }
+                .shu{
+                    display: inline-block;
+                    width: 3px;
+                    height: 14px;
+                    background-color: #B0B0B0;
+                }
+            }
+        }
+    }
+    #shops-list{
+        min-height: 862px;
+        background-color: #F5F5F5;
+        padding-top: 100px;
+        .list-mid{
+            background-color: #F5F5F5;
+            width: 1226px;
+            margin: 0 auto;
+            .list-head{
+                width: 1226px;
+                height: 70px;
+                padding-right: 26px;
+                display: flex;
+                background-color: #fff;
+                border-bottom: 2px solid #B0B0B0;
+                .checkbox{
+                    width: 110px;
+                    height: 70px;
+                    font-size: 16px;
+                    line-height: 70px;
+                    color: #333;
+                    padding-right: 26px;
+                    text-align: center;
+                    input{
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 10px;
+                    }
+                }
+                .imgbox{
+                    width: 120px;
+                    height: 70px;
+                }
+                .shopsname{
+                    width: 380px;
+                    height: 70px;
+                    line-height: 70px;
+                    font-size: 16px;
+                    color: #333;
+                }
+                .tshopsprice{
+                    width: 158px;
+                    height: 70px;
+                    line-height: 70px;
+                    color: #333;
+                    font-size: 16px;
+                    padding-right: 18px;
+                }
+                .tnum{
+                    width: 150px;
+                    height: 70px;
+                    line-height: 70px;
+                    text-align: center;
+                    font-size: 16px;
+                    color: #333;
+                }
+                .totall{
+                    width: 201px;
+                    height: 70px;
+                    line-height: 70px;
+                    font-size: 16px;
+                    color: #333;
+                    text-align: center;
+                }
+                .do{
+                    width: 80px;
+                    height: 70px;
+                    line-height: 70px;
+                    font-size: 16px;
+                    color: #333;
+                    text-align: center;
+                }
+            }
+            .shops{
+                min-height: 300px;
+                width: 1226px;
+                background-color: #fff;
+                .shops-item{
+                    display: flex;
+                    padding-right: 26px;
+                    padding: 10px 0;
+                        .checkbox{
+                            width: 110px;
+                            height: 70px;
+                            font-size: 16px;
+                            line-height: 70px;
+                            color: #333;
+                            padding-right: 26px;
+                            text-align: center;
+                            input{
+                                width: 20px;
+                                height: 20px;
+                                margin-right: 10px;
+                            }
+                        }
+                        .imgbox{
+                            width: 120px;
+                            height: 70px;
+                            img{
+                                width: 80px;
+                                height: 80px;
+                            }
+                        }
+                        .shopsname{
+                            width: 380px;
+                            height: 70px;
+                            line-height: 70px;
+                            font-size: 16px;
+                            color: #333;
+                        }
+                        .shopsprice{
+                            width: 158px;
+                            height: 70px;
+                            line-height: 70px;
+                            color: #333;
+                            font-size: 16px;
+                            padding-right: 18px;
+                        }
+                        .num{
+                            width: 150px;
+                            height: 70px;
+                            display: flex;
+                            align-items: center;
+                            .numshops{
+                                width: 72px;
+                                height: 38px;
+                                text-align: center;
+                                line-height: 38px;
+                                font-size: 16px;
+                                color: #B0B0B0;
+                                border-top: 1px solid #757575;
+                                border-bottom: 1px solid #757575;
+                            }
+                            a{
+                                width: 38px;
+                                height: 38px;
+                                color: #B0B0B0;
+                                font-size: 24px;
+                                text-align: center;
+                                line-height: 38px;
+                                border: 1px solid #757575;
+                                &:hover{
+                                    background-color: #d4d3d3;
+                                    transition: all .1s linear;
+                                }
+                            }
+                        }
+                        .totall{
+                            width: 201px;
+                            height: 70px;
+                            line-height: 70px;
+                            font-size: 16px;
+                            color: red;
+                            text-align: center;
+                        }
+                        .do{
+                            width: 80px;
+                            height: 70px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            .del{
+                                width: 24px;
+                                height: 24px;
+                                font-size: 16px;
+                                color: #333;
+                                text-align: center;
+                                border-radius: 50%;
+                                &:hover{
+                                    color: #fff;
+                                    background-color: #f57c2b;
+                                    transition: all .2s linear;
+                                }
+                            }
+                        }
+                }
+            }
+            .list-foot{
+                width: 1226px;
+                height: 50px;
+                background-color: #fff;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+                .left-section{
+                    width: 300px;
+                    a{
+                        line-height: 50px;
+                        font-size: 16px;
+                        margin-left: 32px;
+                        color: #B0B0B0;
+                        transition: all .2s linear;
+                        &:hover{
+                            color: #FF6700;
+                        }
+                    }
+                    p{
+                        line-height: 50px;
+                        padding-left: 20px;
+                        font-size: 16px;
+                        color: #B0B0B0;
+                        float: right;
+                        strong{
+                            color: #FF6700;
+                        }
+                    }
+                }
+                .right-section{
+                    width: 360px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: space-between;
+                    .price-totall{
+                        color: #FF6700;
+                        font-size: 16px;
+                        line-height: 50px;
+                        strong{
+                            color: red;
+                            font-size: 24px;
+                        }
+                    }
+                    a{
+                        width: 200px;
+                        height: 50px;
+                        color: #fff;
+                        background-color: #FF6700;
+                        text-align: center;
+                        line-height: 50px;
+                        &:hover{
+                            background-color: #f57c2b;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
