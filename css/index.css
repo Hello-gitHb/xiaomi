@@ -95,7 +95,7 @@
 }
 
 #xiaomi #nav .navcenter .nav-search {
-  display: flex;
+  position: relative;
 }
 
 #xiaomi #nav .navcenter .nav-search input {
@@ -105,6 +105,7 @@
   padding: 0 10px;
   font-size: 14px;
   line-height: 50px;
+  float: left;
 }
 
 #xiaomi #nav .navcenter .nav-search .search-btn {
@@ -115,11 +116,26 @@
   line-height: 50px;
   border: 1px solid #cccccc;
   cursor: pointer;
+  float: right;
 }
 
 #xiaomi #nav .navcenter .nav-search .search-btn:hover {
   background-color: #FD8705;
   color: #fff;
+}
+
+#xiaomi #nav .navcenter .nav-search .boxipt {
+  width: 244px;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  z-index: 10;
+  color: #7D8479;
+  background-color: #fff;
+}
+
+#xiaomi #nav .navcenter .nav-search .boxipt p {
+  margin: 2px 0;
 }
 
 #xiaomi #swiper {

@@ -214,31 +214,48 @@ getshopData();
 
 
 
-// let ipt_s = document.querySelector('.ipt');
-// let btn_s = document.querySelector('.btn')
-// let box_s = document.querySelector('.botipt')
 
-// function fun(res) {
-//     let str = ''
-//     let arr = res.result
-//     for (var i = 0; i < arr.length; i++) {
-//         str += `<p>${arr[i][0]}</p>`
-//     }
-//     box_s.innerHTML = str;
-//     console.log(box_s.innerHTML);
-// }
+function fun(res) {
+    let str = ''
+    let arr = res.result
+    for (var i = 0; i < arr.length; i++) {
+        str += `<p>${arr[i][0]}</p>`
+    }
+    $('.boxipt').html(str);
+}
 
-// ipt_s.onkeydown = function () {
-//     if (ipt_s.value) {
-//         let script = document.createElement('script')
-//         script.src = `https://suggest.taobao.com/sug?code=utf-8&q=${ipt_s.value}&_ksTS=1611924128343_918&callback=fun`
-//         document.body.appendChild(script)
-//         script.remove();
-//     } else {
-//         console.log(2);
-//         box_s.innerHTML = ''
-//     }
-// }
+$('.sch-ipt').keydown(function () {
+    if ($('.sch-ipt').val()) {
+        let script = document.createElement('script')
+        script.src = `https://suggest.taobao.com/sug?code=utf-8&q=${$('.sch-ipt').val()}&_ksTS=1611924128343_918&callback=fun`
+        document.body.appendChild(script)
+        script.remove();
+    } else {
+        $('.boxipt').html('')
+        $('.boxipt').css({
+            borderWidth: 1
+        })
+    }
+})
 
-
-
+$('.search-btn').click(function () {
+    if ($('.sch-ipt').val()) {
+        $.ajax({
+            url: './data/goodsList2.json',
+            type: 'get',
+            success: function (res) {
+                console.log(res);
+                for (var i = 0; i < res.length; i++){
+                    if ($('.sch-ipt').val() == res[i].name) {
+                        window.location.href = 'html/shopsDesc.html?product_id=' + res[i].product_id;
+                    }
+                }
+            },
+            error: function (msg) {
+                console.log(msg);
+            }
+        })
+    } else {
+        alert('您的输入为空');
+    }
+})
